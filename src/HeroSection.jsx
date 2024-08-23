@@ -1,6 +1,8 @@
 import React from 'react';
 import './HeroSection.css';
 import hero from './assets/hero.png';
+import playbutton from './assets/playbutton.png';
+
 
 const HeroSection = () => {
     return (
@@ -9,7 +11,7 @@ const HeroSection = () => {
                 <h1>Find your perfect place to stay</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 <button className="video-container">
-                    <img src="src\assets\playbutton.png" alt="Play Button" style={{width : '30px'}} />
+                    <img src={playbutton} alt="Play Button" style={{width : '30px'}} />
                 Watch Video
                 </button>
             </div>
