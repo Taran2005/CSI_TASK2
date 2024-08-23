@@ -1,0 +1,153 @@
+.hotel-list {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hotel-list h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.hotel-list p {
+    color: #888;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.view-all-btn {
+    padding: 8px 20px;
+    background-color: #e3f8e8;
+    color: #4caf50;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.view-all-btn:hover {
+    background-color: #c5f0d1;
+    transform: scale(1.05);
+}
+
+.hotel-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.hotel-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    position: relative;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.hotel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.star {
+    color: #555555;
+    transition: transform 0.3s ease;
+}
+
+.filled {
+    color: #f1c40f;
+}
+
+.hotel-card:hover .star {
+    transform: rotate(20deg) scale(1.2);
+}
+
+.hotel-image {
+    width: 100%;
+    object-fit: cover;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hotel-content {
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hotel-location {
+    color: #4caf50;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.hotel-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hotel-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    animation: fadeIn 3.5s ease-in-out;
+}
+
+.hotel-price {
+    font-size: 1rem;
+    font-weight: bold;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.hotel-rating {
+    display: flex;
+    align-items: center;
+    animation: fadeIn 4.5s ease-in-out;
+}
+
+.rating-value {
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #555555;
+    animation: fadeIn 5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
